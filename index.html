@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shedload of Vinyl. A women's advocacy site about emotional manipulation, lying, blame reversal, reactive abuse and losing trust in your own judgement.">
+<title>Shedload of Vinyl</title>
+
+<style>
+body{
+  margin:0;
+  background:#d5d0c7;
+  color:#191919;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1.48;
+}
+a{color:#5c3152;text-decoration:underline}
+a:visited{color:#433047}
+a:hover{background:#fff2a8;color:#000}
+
+#page{
+  width:770px;
+  margin:16px auto;
+  background:#f7f3e9;
+  border:1px solid #777;
+  box-shadow:0 0 0 3px #ebe5d9;
+}
+
+#topbar{
+  background:#292929;
+  color:white;
+  padding:5px 8px;
+  font-size:11px;
+  text-align:right;
+}
+
+#header{
+  background:#806477;
+  color:white;
+  padding:18px;
+  border-bottom:4px solid #4c3946;
+}
+#header h1{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:39px;
+  font-weight:normal;
+  margin:0;
+  letter-spacing:-1px;
+}
+#header p{margin:3px 0 0}
+
+#nav{
+  background:#e1d9d7;
+  padding:7px 6px;
+  border-bottom:1px solid #999;
+  text-align:center;
+  font-size:12px;
+}
+#nav a{
+  color:#222;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 6px;
+}
+#nav a:hover{text-decoration:underline;background:none}
+
+#crumbs{
+  background:#efebe3;
+  border-bottom:1px dotted #aaa;
+  padding:5px 15px;
+  font-size:11px;
+  color:#666;
+}
+
+.layout{
+  display:grid;
+  grid-template-columns:185px 1fr;
+  gap:17px;
+  padding:16px;
+}
+
+.sidebar{font-size:12px}
+.box{
+  border:1px solid #968c84;
+  background:#eee8df;
+  margin-bottom:12px;
+}
+.box h3{
+  margin:0;
+  padding:5px 7px;
+  background:#c9b8c2;
+  border-bottom:1px solid #968c84;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.box .inside{padding:8px}
+.box ul{margin:0;padding-left:17px}
+.box li{margin:4px 0}
+
+.main h2{
+  font-family:Georgia, "Times New Roman", serif;
+  color:#654858;
+  font-size:25px;
+  font-weight:normal;
+  border-bottom:1px dotted #877a73;
+  padding-bottom:4px;
+  margin:5px 0 11px;
+}
+.main h3{
+  font-size:15px;
+  color:#3c3037;
+  margin:17px 0 4px;
+}
+.main p{margin:7px 0 11px}
+
+.intro{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:17px;
+  line-height:1.55;
+  background:#eee4e9;
+  border:1px solid #baa8b2;
+  padding:12px;
+  margin-bottom:17px;
+}
+.about{
+  background:#fff;
+  border:1px solid #aaa;
+  padding:11px 12px;
+  margin-bottom:18px;
+}
+.entry{
+  border-bottom:1px dotted #aaa;
+  padding-bottom:11px;
+  margin-bottom:14px;
+}
+.quote{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:17px;
+  background:#fff;
+  border:1px solid #bbb;
+  border-left:5px solid #806173;
+  padding:11px 13px;
+  margin:17px 0;
+}
+.note{
+  background:#fff9d6;
+  border:1px solid #b7aa6d;
+  padding:9px;
+  margin:14px 0;
+  font-size:12px;
+}
+.return{
+  text-align:right;
+  font-size:11px;
+  margin:7px 0 22px;
+}
+.section-links{
+  border:1px solid #aaa;
+  background:#f1ece5;
+  padding:9px 10px;
+  margin:10px 0 17px;
+}
+.section-links a{margin-right:9px}
+.support{
+  border:1px solid #999;
+  background:#f0ede7;
+  padding:10px;
+}
+.small{font-size:11px;color:#666}
+
+#footer{
+  background:#e1dcd3;
+  border-top:1px solid #888;
+  padding:9px 12px;
+  text-align:center;
+  font-size:11px;
+  color:#666;
+}
+.counter{
+  font-family:"Courier New", monospace;
+  background:#111;
+  color:#83ff83;
+  padding:1px 4px;
+  border:1px inset #aaa;
+}
+.quick{
+  border:1px solid #aaa;
+  background:white;
+  padding:3px 7px;
+  font:inherit;
+  cursor:pointer;
+}
+
+@media(max-width:800px){
+  #page{width:auto;margin:0;border:0;box-shadow:none}
+  .layout{grid-template-columns:1fr}
+  .sidebar{order:2}
+}
+</style>
+</head>
+
+<body id="top">
+
+<div id="page">
+
+<div id="topbar">
+women supporting women &nbsp; | &nbsp;
+<button class="quick" onclick="quickExit()">QUICK EXIT</button>
+</div>
+
+<div id="header">
+<h1>Shedload of Vinyl</h1>
+<p>For when you keep thinking: am I going mad?</p>
+</div>
+
+<div id="nav">
+<a href="#about">ABOUT</a>
+<a href="#power">POWER</a>
+<a href="#gaslighting">GASLIGHTING</a>
+<a href="#patterns">MANIPULATION</a>
+<a href="#reactive">REACTIVE ABUSE</a>
+<a href="#whatyoucando">WHAT YOU CAN DO</a>
+<a href="#support">SUPPORT</a>
+</div>
+
+<div id="crumbs">
+You are here: <a href="#top">home</a> &gt; Shedload of Vinyl
+</div>
+
+<div class="layout">
+
+<aside class="sidebar">
+
+<div class="box">
+<h3>Start here</h3>
+<div class="inside">
+<ul>
+<li><a href="#about">What is this site?</a></li>
+<li><a href="#power">Power dynamics</a></li>
+<li><a href="#gaslighting">Gaslighting</a></li>
+<li><a href="#patterns">Manipulation patterns</a></li>
+<li><a href="#reactive">Reactive abuse</a></li>
+<li><a href="#whatyoucando">What you can do</a></li>
+<li><a href="#support">Where to get help</a></li>
+</ul>
+</div>
+</div>
+
+<div class="box">
+<h3>Does this sound familiar?</h3>
+<div class="inside">
+<ul>
+<li>You keep checking whether you remembered things correctly.</li>
+<li>Simple questions turn into bigger arguments.</li>
+<li>Your reaction gets more attention than what caused it.</li>
+<li>You often leave conversations feeling guilty or confused.</li>
+<li>You feel you need outside reassurance about what happened.</li>
+<li>You keep hoping the next conversation will finally make things clear.</li>
+</ul>
+</div>
+</div>
+
+<div class="box">
+<h3>One thing</h3>
+<div class="inside">
+If you are confused all the time, that matters.
+</div>
+</div>
+
+<div class="box">
+<h3>Quick links</h3>
+<div class="inside">
+<a href="https://www.womensaid.org.uk/">Women's Aid</a><br>
+<a href="https://www.nationaldahelpline.org.uk/">National Domestic Abuse Helpline</a><br>
+<a href="#support">More support</a>
+</div>
+</div>
+
+</aside>
+
+<main class="main">
+
+<div class="intro">
+Some relationships leave you feeling smaller without there being one big moment you can point to.
+You just notice that one person's feelings, opinions and version of events seem to carry more weight than yours.
+</div>
+
+<h2 id="about">What is Shedload of Vinyl?</h2>
+
+<div class="about">
+<p><strong>Shedload of Vinyl is a women's advocacy site about emotional manipulation, power imbalances and the slow loss of trust in your own judgement.</strong></p>
+
+<p>It is for the grey areas. The things that do not always look serious from the outside, but change how you behave over time.</p>
+
+<p>Maybe you are always the one explaining yourself. Maybe disagreement feels strangely risky. Maybe you find yourself checking whether you are being "fair" while the other person never seems to have to do the same.</p>
+
+<p>The point of this site is simple: if a relationship repeatedly leaves you confused, guilty, frightened of conflict or unsure of your own memory, that is worth paying attention to.</p>
+</div>
+
+<div class="section-links">
+<strong>Jump to:</strong>
+<a href="#power">power dynamics</a>
+<a href="#gaslighting">gaslighting</a>
+<a href="#patterns">manipulation</a>
+<a href="#reactive">reactive abuse</a>
+<a href="#whatyoucando">what you can do</a>
+<a href="#support">support</a>
+</div>
+
+<h2 id="power">Power dynamics</h2>
+
+<div class="entry">
+<h3>One person's feelings always matter more</h3>
+<p>If they are upset, everything stops. If you are upset, you are expected to calm down, be reasonable or get over it.</p>
+<p>Over time, you can start treating their discomfort as urgent and your own as optional.</p>
+</div>
+
+<div class="entry">
+<h3>They get to define what is reasonable</h3>
+<p>Your boundaries are described as excessive. Their demands are described as normal.</p>
+<p>Your privacy is suspicious. Their secrecy is none of your business.</p>
+<p>The rules are not always spoken out loud, but somehow they keep favouring the same person.</p>
+</div>
+
+<div class="entry">
+<h3>You need permission without anyone calling it permission</h3>
+<p>No one says, "You are not allowed."</p>
+<p>Instead, there may be sulking, guilt, coldness, arguments or a bad atmosphere until doing what you want stops feeling worth it.</p>
+</div>
+
+<div class="entry">
+<h3>Experience, age, money or confidence gets used as authority</h3>
+<p>Someone may repeatedly imply that they understand relationships better, know how the world works, or are simply more rational than you.</p>
+<p>That can make ordinary disagreement feel like proof that you are naive, immature or unstable.</p>
+</div>
+
+<p class="return"><a href="#top">back to top</a></p>
+
+<h2 id="gaslighting">Gaslighting and reality distortion</h2>
+
+<div class="entry">
+<h3>You remember something clearly. They tell you it did not happen like that.</h3>
+<p>Not once, but often enough that you start checking yourself before you speak.</p>
+<p>You begin saying things like, "Maybe I remembered it wrong."</p>
+</div>
+
+<div class="entry">
+<h3>Your interpretation is always the least credible one</h3>
+<p>You say something felt cruel. They say you are too sensitive.</p>
+<p>You say something felt controlling. They say they were only trying to help.</p>
+<p>You say you felt uncomfortable. They say you are imagining motives that are not there.</p>
+</div>
+
+<div class="entry">
+<h3>The goalposts move</h3>
+<p>You answer one criticism and another appears.</p>
+<p>You explain yourself, then the problem becomes your tone. You change your tone, then the problem becomes your timing. You wait, then you are accused of avoiding the issue.</p>
+<p>There is no version of the conversation where you quite get it right.</p>
+</div>
+
+<div class="entry">
+<h3>You start relying on other people to tell you what is normal</h3>
+<p>You ask friends to read messages. You explain arguments in detail. You want someone outside the relationship to tell you whether your reaction makes sense.</p>
+<p>That can happen when your own judgement has been challenged too many times.</p>
+</div>
+
+<div class="quote">
+“I took a deep breath and listened to the old brag of my heart: I am, I am, I am.”
+<div class="small" style="margin-top:7px;">Sylvia Plath, <em>The Bell Jar</em> (1963)</div>
+</div>
+
+<p class="return"><a href="#top">back to top</a></p>
+
+<h2 id="patterns">Common manipulation patterns</h2>
+
+<div class="entry">
+<h3>Selective affection</h3>
+<p>Warmth, attention and closeness can disappear when you disagree and return when you fall back into line.</p>
+<p>You may start chasing the good version of the relationship instead of asking why affection feels conditional.</p>
+</div>
+
+<div class="entry">
+<h3>Guilt instead of a direct request</h3>
+<p>Instead of saying what they want, they make you feel selfish for not already wanting it too.</p>
+<p>You end up agreeing because saying no feels cruel.</p>
+</div>
+
+<div class="entry">
+<h3>Double standards</h3>
+<p>Behaviour that is unacceptable from you is understandable from them.</p>
+<p>If you need space, you are cold. If they withdraw, they are protecting their peace.</p>
+<p>If you ask questions, you are suspicious. If they ask questions, they are being caring.</p>
+</div>
+
+<div class="entry">
+<h3>Blame reversal</h3>
+<p>You raise a problem and end up defending yourself.</p>
+<p>The original issue gets replaced by your reaction, your character, your history or something you once did months ago.</p>
+</div>
+
+<div class="entry">
+<h3>Keeping you slightly off balance</h3>
+<p>Approval, affection and reassurance may feel inconsistent.</p>
+<p>You can become more focused on reading their mood and getting things back to normal than on whether the relationship is actually fair.</p>
+</div>
+
+<div class="entry">
+<h3>Making independence feel like betrayal</h3>
+<p>Time alone, outside friendships, hobbies, work or private thoughts can be treated as distance from the relationship.</p>
+<p>You may slowly give up pieces of your own life just to avoid the friction.</p>
+</div>
+
+<p class="return"><a href="#top">back to top</a></p>
+
+<h2 id="reactive">Reactive abuse</h2>
+
+<p>The phrase is often used for situations where someone is repeatedly provoked, cornered, criticised, lied to, baited or emotionally worn down until they react badly, and that reaction is then presented as if it happened in a vacuum.</p>
+
+<div class="entry">
+<h3>You are pushed past your limit</h3>
+<p>You may shout, swear, send angry messages, slam a door or say something you regret.</p>
+<p>Your reaction still matters. But so does the context that led up to it.</p>
+</div>
+
+<div class="entry">
+<h3>Your reaction becomes the only evidence anyone sees</h3>
+<p>A calm person can still be manipulative. A distressed person can still be reacting to something real.</p>
+<p>Volume, tone and composure do not tell you who held the power in the wider relationship.</p>
+</div>
+
+<div class="entry">
+<h3>You get cast as the abusive one</h3>
+<p>The focus moves onto your worst moment.</p>
+<p>You become so busy proving that you are not dangerous, unstable or controlling that the pattern you were reacting to disappears from view.</p>
+</div>
+
+<div class="entry">
+<h3>Responsibility still goes both ways</h3>
+<p>Being provoked does not make every reaction acceptable.</p>
+<p>But one angry reaction is not automatically the same thing as a sustained pattern of manipulation, intimidation, blame or control.</p>
+</div>
+
+<p class="return"><a href="#top">back to top</a></p>
+
+<h2>What it can do to you</h2>
+
+<div class="entry">
+<h3>You second-guess ordinary decisions</h3>
+<p>You start thinking through how they might react before deciding what you want.</p>
+</div>
+
+<div class="entry">
+<h3>You lose confidence in your own memory</h3>
+<p>You remember something, then immediately wonder whether you are being unfair.</p>
+</div>
+
+<div class="entry">
+<h3>You become hyper-aware of mood</h3>
+<p>You can tell from a face, a pause or a text message that the atmosphere has changed.</p>
+<p>You start adjusting yourself before anything has even been said.</p>
+</div>
+
+<div class="entry">
+<h3>You become more interested in keeping the peace than being honest</h3>
+<p>You stop raising certain topics because you already know where they go.</p>
+</div>
+
+<div class="note">
+<strong>You do not need a perfect label.</strong>
+If a relationship repeatedly makes you feel smaller, confused, guilty, frightened of disagreement or unable to trust yourself, that is enough reason to take it seriously.
+</div>
+
+
+<h2 id="whatyoucando">What you can do</h2>
+
+<p>You do not have to decide exactly what the relationship is before you do anything. If something feels wrong, you can start by giving yourself a bit more room to see it clearly.</p>
+
+<div class="entry">
+<h3>Write down what happened</h3>
+<p>If it is safe, keep brief notes somewhere private. Date, what happened, what was said, and how the conversation ended.</p>
+<p>Do not write an essay. The point is to stop every incident being rewritten in your head later.</p>
+</div>
+
+<div class="entry">
+<h3>Look for patterns, not one-off rows</h3>
+<p>One argument can be messy. What matters more is what keeps repeating.</p>
+<p>Do you always end up apologising? Do they keep changing the subject? Do your boundaries keep becoming debates? Do you feel more confused after talking than before?</p>
+</div>
+
+<div class="entry">
+<h3>Reality-check with someone you trust</h3>
+<p>Choose someone who is steady and not involved in the relationship.</p>
+<p>You do not need them to tell you what to do. Sometimes it is enough to say, "Can I tell you what happened and you tell me if this sounds normal to you?"</p>
+</div>
+
+<div class="entry">
+<h3>Give yourself private space</h3>
+<p>Keep hold of things that are yours. Your friendships. Your money where possible. Your own email. Your own passwords. Your own plans.</p>
+<p>If someone has access to your devices or accounts, review what they can see from a device you trust.</p>
+</div>
+
+<div class="entry">
+<h3>Try small boundaries and watch what happens</h3>
+<p>You do not need a huge confrontation.</p>
+<p>A small boundary can tell you a lot. Saying no. Taking time to reply. Seeing a friend. Keeping something private. Asking for a direct answer.</p>
+<p>Pay attention to whether the boundary is respected or punished.</p>
+</div>
+
+<div class="entry">
+<h3>Stop trying to win every argument</h3>
+<p>If the conversation keeps going in circles, you do not have to keep proving your point.</p>
+<p>You can end a discussion without getting agreement. You can say, "I remember it differently," or "I'm not discussing this any further."</p>
+</div>
+
+<div class="entry">
+<h3>Notice what happens to you afterwards</h3>
+<p>After an argument, do you feel clearer or more confused? Safer or more anxious? More confident or ashamed?</p>
+<p>Your body and mood can sometimes tell you more than the final words of the argument.</p>
+</div>
+
+<div class="entry">
+<h3>Get specialist support before things feel extreme</h3>
+<p>You do not need to be in immediate danger to speak to a support service.</p>
+<p>You can contact one simply because you are confused, worried, or want help making sense of a pattern.</p>
+</div>
+
+<div class="note">
+<strong>You do not need permission to take your own discomfort seriously.</strong>
+You also do not have to make a big decision all at once. Sometimes the first step is just getting enough distance and support to think clearly.
+</div>
+
+<p class="return"><a href="#top">back to top</a></p>
+
+<h2 id="support">Support</h2>
+
+<div class="support">
+<p><strong>National Domestic Abuse Helpline, Refuge</strong><br>
+0808 2000 247<br>
+<a href="https://www.nationaldahelpline.org.uk/">nationaldahelpline.org.uk</a></p>
+
+<p><strong>Women's Aid</strong><br>
+<a href="https://www.womensaid.org.uk/">womensaid.org.uk</a></p>
+
+<p><strong>Emergency</strong><br>
+If you are in immediate danger, call 999.</p>
+</div>
+
+<p class="small">
+Shedload of Vinyl is peer-oriented advocacy and general information. It is not a diagnostic, legal, medical or emergency service.
+</p>
+
+<p class="return"><a href="#top">back to top</a></p>
+
+</main>
+</div>
+
+<div id="footer">
+shedloadofvinyl.com &nbsp; | &nbsp;
+<a href="#about">about</a> &nbsp; | &nbsp;
+<a href="#support">support</a> &nbsp; | &nbsp;
+visitor no. <span class="counter">000247</span>
+</div>
+
+</div>
+
+<script>
+function quickExit(){
+  window.location.replace("https://www.bbc.co.uk/weather");
+}
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape") quickExit();
+});
+</script>
+
+</body>
+</html>
